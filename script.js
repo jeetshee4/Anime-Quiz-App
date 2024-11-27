@@ -79,8 +79,7 @@ const questions = [
 let questionElement = document.getElementById("question")
 let answerButtons = document.getElementById("answer-buttons")
 let nextButton = document.getElementById("next-btn")
-
-
+let exitButton = document.getElementById("exit-btn")
 
 let currentQuestionIndex = 0
 let score = 0
@@ -118,6 +117,7 @@ function showQuestion () {
 
 function resetState () {
  nextButton.style.display="none"
+ exitButton.style.display="none"
  while(answerButtons.firstChild)
  {
     answerButtons.removeChild(answerButtons.firstChild)
@@ -166,6 +166,8 @@ function showScore () {
     questionElement.innerHTML=`Your Score is:${score} out of ${questions.length}!`
     nextButton.innerHTML="Play Again"
     nextButton.style.display="block"
+    exitButton.style.display="block"
+
 }
 
 
