@@ -1,3 +1,65 @@
-body {
-     background-image: url(background.jpg);
+*{
+      margin: 0;
+      padding: 0;
+
 }
+
+main{
+   width: 100vw;
+   height: 95vh;
+}
+
+.box {
+     background-image: url(background.jpg);
+     background-repeat:no-repeat;
+     width: 100%;
+     height: 95vh;
+     background-size: cover;
+     position: absolute;
+     opacity: 0.5;
+     ;
+
+}
+
+.heading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 26px;
+    gap: 36px;
+    object-fit: contain;
+    top: 20vh;
+}
+
+.heading h1{
+      font-size: 60px;
+}
+
+.startbtn {
+      background-color: purple;
+      color: Yellow;
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 143px;
+      height: 52px;
+      outline: none;
+      font-size: large;
+      font-style: italic;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      cursor: pointer;
+}
+
+.startbtn:hover {
+      transform: scale(1.1,1.1);
+
+}
+
+footer {
+      background: black;
+      color: white;
+      text-align: center;
+      height: 5vh;
+      font-size: larger;
+}
+
